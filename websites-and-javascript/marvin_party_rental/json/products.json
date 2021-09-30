@@ -1,0 +1,89 @@
+[{
+		"item_id": "5fcf67c4ad6b2ab632c314f1",
+		"name": "White Metal Chair",
+		"qty_in_stock": 2000,
+		"image": "white_metal_chair.png",
+		"price": 1.00,
+		"description": "White, comfortable chairs. most affordable chair for your next event"
+	},
+	{
+		"item_id": "5fcf67c422a6b181e5afc624",
+		"name": "Black Metal Chair",
+		"qty_in_stock": 2000,
+		"image": "black_metal_chair.png",
+		"price": 1.00,
+		"description": "Black, comfortable chairs. most affordable chair for your next event"
+	},
+	{
+		"item_id": "5fcf67c49163291784665bea",
+		"name": "Chiavari Chair",
+		"qty_in_stock": 1000,
+		"image": "chiavari_chair.jpg",
+		"price": 6.49,
+		"description": "The most elegant chair in our inventory. used for weddings and reception parties"
+	},
+	{
+		"item_id": "5fcf67c404cf6aec8fddaac1",
+		"name": "Wooden Chair",
+		"qty_in_stock": 1000,
+		"image": "wooden_chair.png",
+		"price": 2.85,
+		"description": "White finish wodden chair. perfect for outdoor weddings"
+	},
+	{
+		"item_id": "5fcf67c4f6934dd758d2cd5f",
+		"name": "King and Queen Chairs",
+		"qty_in_stock": 24,
+		"image": "king_queen_chair.jpg",
+		"price": 175.00,
+		"description": "King and Queen size Chairs, great for weddings and quinceaneras"
+	},
+	{
+		"item_id": "5fcf67c43629bfb04f04158b",
+		"name": "60 inch Round Table",
+		"qty_in_stock": 100,
+		"image": "60_inch_round_table.png",
+		"price": 8.50,
+		"description": "60 inch round table for inside only"
+	},
+	{
+		"item_id": "5fcf67c403333f305e8d6a8c",
+		"name": "48 inch Round Table",
+		"qty_in_stock": 150,
+		"image": "48_inch_round_table.jpg",
+		"price": 8.50,
+		"description": "48 inch round table for inside only"
+	},
+	{
+		"item_id": "5fcf67c4ec69826afc6d5bf1",
+		"name": "10x20 Canopy",
+		"qty_in_stock": 15,
+		"image": "10x20_foot_tent.png",
+		"price": 90.00,
+		"description": "A 10x20 foot tent"
+	},
+	{
+		"item_id": "5fcf67c48b7bc8befd72b39f",
+		"name": "20x30 Tent",
+		"qty_in_stock": 10,
+		"image": "20x30_tent.jpg",
+		"price": 450.00,
+		"description": "20x30 tent without walls"
+	},
+	{
+		"item_id": "5fcf67c48092a39365552bc0",
+		"name": "30x40 Tent",
+		"qty_in_stock": 5,
+		"image": "30x40_tent.jpg",
+		"price": 550,
+		"description": "This tent is the largest in our inventory, perfect for any event."
+	},
+	{
+		"item_id": "5fcf67c49d7e3210b25f72c1",
+		"name": "Moonbounce Mickey Mouse",
+		"qty_in_stock": 3,
+		"image": "moonbounce_mickey.png",
+		"price": 250.00,
+		"description": ""
+	}
+]
