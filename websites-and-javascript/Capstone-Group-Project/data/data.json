@@ -1,0 +1,81 @@
+{
+  "users" : [
+    {
+      "name": "Kylie Reynolds",
+      "username": "kreynolds",
+      "password": "kreynolds",
+      "email": "kreynolds@gmail.com"
+    },
+    {
+      "name": "Carl Bowers",
+      "username": "cbowers",
+      "password": "cbowers",
+      "email": "cbowers@gmail.com"
+    },
+    {
+      "name": "David Mejia",
+      "username": "dmejia",
+      "password": "dmejia",
+      "email": "dmejia@gmail.com"
+    },
+    {
+      "name": "Jason Counsman",
+      "username": "jcounsman",
+      "password": "jcounsman",
+      "email": "jcounsman@gmail.com"
+    }
+  ],
+
+  "appointments": [
+    {
+      "user": "kreynolds",
+      "trainer": "Bob Ross",
+      "date": "2021-08-10",
+      "time": "1:00 pm"
+    },
+    {
+      "user": "kreynolds",
+      "trainer": "Bob Ross",
+      "date": "2021-08-12",
+      "time": "1:00 pm"
+    },
+    {
+      "user": "cbowers",
+      "trainer": "Jane Fonda",
+      "date": "2021-08-13",
+      "time": "2:00 pm"
+    },
+    {
+      "user": "cbowers",
+      "trainer": "Jane Fonda",
+      "date": "2021-08-10",
+      "time": "3:00 pm"
+    },
+    {
+      "user": "dmejia",
+      "trainer": "Arnold Schwarzennegar",
+      "date": "2021-08-11",
+      "time": "11:00 am"
+    },
+    {
+      "user": "dmejia",
+      "trainer": "Arnold Schwarzennegar",
+      "date": "2021-08-12",
+      "time": "10:00 am"
+    },
+    {
+      "user": "jcounsman",
+      "trainer": "Bob Ross",
+      "date": "2021-08-13",
+      "time": "10:00 am"
+    },
+    {
+      "user": "jcounsman",
+      "trainer": "Jane Fonda",
+      "date": "2021-08-10",
+      "time": "1:00 pm"
+    }
+  ],
+
+  "trainingTimes": ["9:00am", "10:00am", "11:00am", "1:00pm", "2:00pm", "3:00pm", "4:00pm"]
+}

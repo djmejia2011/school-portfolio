@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Modify Schedule</title>
+    
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/loadHeader.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/appointments.js"></script>
+    <script type="text/javascript" src="js/modifySessions.js"></script>
+  
+    <style>
+      #modifyForm {
+        display: none;
+        border: 2px solid #d5dbf0;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .error-message {
+        display: none;
+        color: red;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="template"></div>
+    
+    <!-- PUT ANY VISIBLE PAGE CONTENT IN THIS TAG -->
+    <div id="page-content">
+      <form>
+        <h1 class="h1 mb-3 mt-4">Fitness Scheduler</h1>
+        <h3 class="h3"><em>Hello <span id="username"></span></em></h3>
+        <h4 class="text-center text-wrap my-4">Modify or Cancel Appointment</h4>
+        
+        <div class="form-group">
+          <label for="scheduledAppointments">Choose appointment to modify or cancel</label>
+          <select class="form-control" id="scheduledAppointments">
+            <option disabled selected>Choose session</option>
+          </select>
+          </div>
+        <div class="error-message" id="no-session">&#9888; Select a session</div>
+        <input type="button" id="modifyAppointmentButton" class="btn btn-md btn-primary m-3 pl-3 pr-4"
+               value="Modify Appointment">
+        <input type="button" id="cancelAppointmentButton" class="btn btn-md btn-primary m-3 pl-4 pr-4"
+               value="Cancel Appointment">
+        
+        <div id="modifyForm">
+          <h4 class="text-center text-wrap my-4">Select any changes</h4>
+          <div class="form-group my-5" id="list-of-trainers">
+            <label for="appointmentTrainer">Trainer</label>
+            <select class="form-control" id="appointmentTrainer">
+              <option selected disabled>Trainers</option>
+              <option value="Bob Ross">Bob Ross</option>
+              <option value="Jane Fonda">Jane Fonda</option>
+              <option value="Arnold Schwarzenegger">Arnold Schwarzenegger</option>
+            </select>
+          </div>
+          
+          <div class="form-group my-5">
+            <label for="appointmentDate">Appointment Date</label>
+            <input type="date" id="appointmentDate">
+          </div>
+          
+          <div class="form-group my-5" id="available-time-slots">
+            <label for="appointmentTime">Select a Time</label>
+            <select class="form-control" id="appointmentTime">
+              <option disabled selected>Choose time</option>
+              <option value="9:00 am">9:00 am</option>
+              <option value="10:00 am">10:00 am</option>
+              <option value="11:00 am">11:00 am</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+            </select>
+          </div>
+          
+          <input type="button" id="saveModButton" class="btn btn-primary" value="Save Changes">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

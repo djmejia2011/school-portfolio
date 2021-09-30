@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitness Scheduler Home</title>
+    
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/loadHeader.js"></script>
+    <script type="text/javascript" src="js/appointments.js"></script>
+  
+    <style>
+      .bio_card {
+        display: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="template"></div>
+    
+    <!-- PUT ANY VISIBLE PAGE CONTENT IN THIS TAG -->
+    <div id="page-content">
+      <form>
+        <h1 class="h1 mb-3 mt-4">Fitness Scheduler</h1>
+        <h3 class="h3"><em>Hello <span id="username"></span></em></h3>
+        <h4 class="text-center text-wrap m-2">Schedule a New Training Appointment</h4>
+        <div class="dropdown">
+          <div class="form-group mt-4" id="list-of-trainers">
+            <label for="appointmentTrainer">Select a Trainer</label>
+            <select class="form-control" id="appointmentTrainer">
+              <option selected disabled>Trainers</option>
+              <option>Bob Ross</option>
+              <option>Jane Fonda</option>
+              <option>Arnold Schwarzenegger</option>
+            </select>
+          </div>
+          
+          <div class="bio_card" id="trainer_bio_bob">
+            <div class="card mb-3 flex mt-4">
+              <div class="card-body">
+                <img id="trainer-image" class="d-inline p-1" src="./img/bob_ross.jpg" alt="image place holder"
+                     style="max-width:100px">
+                <h3 id="trainer-name" class="card-title d-inline p-2 m-0">Bob Ross</h3>
+                <p id="trainer-bio" class="card-body m-0">
+                  Bob Ross is both a prolific painter and trainer. While he's mostly known for painting happy trees
+                  and beautiful landscapes, he also knows his way around a squat rack. The only thing bigger than his
+                  perm are his quads.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bio_card" id="trainer_bio_jane">
+            <div class="bio_card card mb-3 flex mt-4">
+              <div class="card-body">
+                <img id="trainer-image2" class="d-inline p-1" src="./img/jane_fonda.jpg" alt="image place holder"
+                     style="max-width:100px">
+                <h3 class="card-title d-inline p-2 m-0">Jane Fonda</h3>
+                <p class="card-body m-0">
+                  Jane Fonda knows how to make you move. You'll be sweating off the pounds while rocking out to the
+                  best of the 70s and 80s. Be ready to blast away some fat in fashionable chic leotards.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bio_card" id="trainer_bio_arnold">
+            <div class="card mb-3 flex mt-4 bio_card">
+              <div class="card-body">
+                <img id="trainer-image3" class="d-inline p-1" src="./img/arnold.jpg" alt="image place holder"
+                     style="max-width:100px">
+                <h5 class="card-title d-inline p-2 m-0">Arnold Schwarzenegger</h5>
+                <p class="card-body m-0">
+                  The Austrian Oak, aka Conan the Governator. He's sure to pump you up. While you might need a
+                  translator to understand anything he says, it's worth it to get swole with the world's strongest man.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="calendar">
+            <h4>Please Select a Date</h4>
+            <input type="date" id="appointmentDate"><br><br>
+          </div>
+          
+          <!-- this div will contain all available time slots will be populated with javascript from the JSON file-->
+          <div class="form-group" id="available-time-slots">
+            <label for="appointmentTime">Select a Time</label>
+            <select class="form-control" id="appointmentTime">
+              <option disabled selected>Choose time</option>
+              <option>9:00 am</option>
+              <option>10:00 am</option>
+              <option>11:00 am</option>
+              <option>1:00 pm</option>
+              <option>2:00 pm</option>
+              <option>3:00 pm</option>
+              <option>4:00 pm</option>
+            </select>
+          </div>
+          
+          <input type="button" id="scheduleAppointmentButton" class="btn btn-primary mt-4" value="Schedule Appointment">
+        </div>
+      
+      </form>
+    </div>
+  </body>
+</html>

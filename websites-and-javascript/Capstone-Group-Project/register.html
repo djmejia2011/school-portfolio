@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register New User</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-template.css">
+    
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    
+    <style>
+      .error-message {
+        display: none;
+        color: red;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="text-center d-flex justify-content-center align-items-center min-vh-100">
+      <form autocomplete="off">
+        <img class="mb-2" src="img/SchedulerLogo.png" alt="fitness logo" style="max-width:150px">
+        <h1 class="h1 mb-3 mt-4">Fitness Scheduler</h1>
+        <h3 class="h3">Register New User</h3>
+        <input type="text" id="newUser" class="form-control mt-3" placeholder="Enter Name" required>
+        <div class="error-message" id="no-name">&#9888; Field cannot be empty</div>
+        
+        <input type="text" id="newUsername" class="form-control mt-3" placeholder="Choose Username" required>
+        <div class="error-message" id="no-username">&#9888; Field cannot be empty</div>
+        <div class="error-message" id="duplicate-username">&#9888; Username already exists</div>
+        <div class="error-message" id="invalid-username">&#9888; Username may only contain alphanumeric characters</div>
+        
+        
+        <input type="password" id="newPassword" class="form-control mt-3" placeholder="Password" required>
+        <div class="error-message" id="no-password">&#9888; Field cannot be empty</div>
+        <div class="error-message" id="invalid-password">&#9888; Password is not complex</div>
+        <label for="newPassword">Minimum 8 characters, must contain <br> upper and lower case, symbols, and numbers</label>
+
+        <input type="password" id="confirmPassword" class="form-control mt-3" placeholder="Confirm Password" required>
+        <div class="error-message" id="different-passwords">&#9888; Passwords do not match</div>
+        
+        <input type="email" id="newEmail" class="form-control mt-3" placeholder="E-mail" required>
+        <div class="error-message" id="no-email">&#9888; Field cannot be empty</div>
+        <div class="error-message" id="invalid-email">&#9888; Invalid email</div>
+        
+        <input type="button" id="cancelButton" class="btn btn-md btn-secondary m-3 pl-4 pr-4" value="Cancel">
+        <input type="button" id="registerUserButton" class="btn btn-md btn-primary m-3 pl-3 pr-3" value="Register">
+        <div class="error-message" id="submission-error">&#9888; Cannot register. Make sure all fields are
+          populated and there are no additional warnings.</div>
+      </form>
+    </div>
+  </body>
+</html>

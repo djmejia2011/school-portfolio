@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-template.css">
+    
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // add function to logout option
+      $('#logoutLink').on('click', function() {
+        // clear session storage variables
+        sessionStorage.clear();
+        window.location.replace('login.html');
+      });
+    </script>
+  </head>
+  
+  <body>
+    <div id="header">
+      <div id="logo-box">
+        <a href="home.html">
+          <img id="header-logo" src="img/SchedulerLogo.png" alt="Fitness Scheduler">
+        </a>
+      </div>
+      
+      <div id="header-nav">
+        <ul class="nav nav-pills nav-fill" id="navigation">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">Appointments</a>
+            <div class="dropdown-menu nav-dropdown">
+              <a class="dropdown-item nav-link" href="scheduleSession.html">Schedule New Session</a>
+              <a class="dropdown-item nav-link" href="modifySessions.html">View/Modify Existing Sessions</a>
+            </div>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">Account</a>
+            <div class="dropdown-menu nav-dropdown">
+              <a class="dropdown-item nav-link" href="accountManagement.html">Account Management</a>
+              <a class="dropdown-item nav-link" id="logoutLink" href="login.html">Logout</a>
+            </div>
+          </li>
+        </ul> <!-- end navigation links area -->
+      </div> <!-- end navigation banner area -->
+      
+      <footer id="page-footer">
+        <p class="text-center mt-1 mb-0 lh-1">CMSC 495-6981</p>
+        <p class="text-center mt-0 mb-1 lh-1">Group One &copy; 2021</p>
+      </footer>
+    
+    </div> <!-- end header -->
+  </body>
+</html>

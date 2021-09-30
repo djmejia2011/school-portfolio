@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitness Scheduler Home</title>
+    
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/loadHeader.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+  </head>
+  
+  <body>
+    <div id="template"></div>
+    
+    <!-- PUT ANY VISIBLE PAGE CONTENT IN THIS TAG -->
+    <div id="page-content">
+      <form>
+        <h1 class="h1 mb-3 mt-4">Fitness Scheduler</h1>
+        <h3 class="h3"><em>Hello <span id="username"></span></em></h3>
+        <p class="text-center text-wrap m-2">Please select from the following actions:</p>
+        <input type="button" id="scheduleRedirectButton" class="col-md-6 btn btn-primary m-3 pl-4 pr-4"
+               value="Make Appointment">
+        <input type="button" id="modifyRedirectButton" class=" col-md-6 btn btn-primary m-3 pl-4 pr-4"
+               value="View/Modify My Appointments">
+        
+        <div class="card col-md-6 offset-md-3">
+          <div class="card-header">Next Appointment</div>
+          <div class="card-body" id="nextAppointment"></div>
+        </div>
+        
+        <input type="button" id="accountRedirectButton" class="col-md-6 btn btn-secondary m-3 pl-4 pr-4"
+               value="Manage Account"/>
+      </form>
+    </div>
+  </body>
+</html>

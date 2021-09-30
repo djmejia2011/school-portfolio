@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/loadHeader.js"></script>
+  </head>
+  
+  <body>
+    <div id="template"></div>
+    
+    <!-- PUT ANY VISIBLE PAGE CONTENT IN THIS TAG -->
+    <div id="page-content">
+      <form>
+        <h1 class="h1 mb-3 mt-4">Fitness Scheduler</h1>
+        <h3 class="h3"><em>Hello <span id="username"></span></em></h3>
+        <p class="text-center text-wrap m-2">About Our Trainers</p>
+        <div class="card mb-3 flex mt-4" id="trainer_bio_bob">
+          <!-- this card will be created using javascript and only displayed when user
+          selects trainer using info from JSON file-->
+          <div class="card-body">
+            <img id="trainer-image" class="d-inline p-1" src="./img/bob_ross.jpg" alt="image place holder"
+                 style="max-width:100px">
+            <h3 class="card-title d-inline p-2 m-0">Bob Ross</h3>
+            <p class="card-body m-0">"Bob Ross is both a prolific painter and trainer. 
+              While he's mostly known for painting happy trees and beautiful landscapes, he also knows 
+              his way around a squat rack. The only thing bigger than his perm are his quads."</p>
+          </div>
+        </div>
+        <div class="card mb-3 flex mt-4" id="trainer_bio_jane">
+          <!-- this card will be created using javascript and only displayed when user
+          selects trainer using info from JSON file-->
+          <div class="card-body">
+            <img id="trainer-image2" class="d-inline p-1" src="./img/jane_fonda.jpg" alt="image place holder"
+                 style="max-width:100px">
+            <h3 class="card-title d-inline p-2 m-0">Jane Fonda</h3>
+            <p class="card-body m-0">"Jane Fonda knows how to make you move.  You'll be sweating off the pounds
+              while rocking out to the best of the 70s and 80s. Be ready to blast away some fat in fashionable chic leotards."</p>
+          </div>
+        </div>
+        <div class="card mb-3 flex mt-4" id="trainer_bio_arnold">
+          <!-- this card will be created using javascript and only displayed when user
+          selects trainer using info from JSON file-->
+          <div class="card-body">
+            <img id="trainer-image3" class="d-inline p-1" src="./img/arnold.jpg" alt="image place holder"
+                 style="max-width:100px">
+            <h5 class="card-title d-inline p-2 m-0">Arnold Schwarzenegger</h5>
+            <p class="card-body m-0">The Austrian Oak, aka Conan the Governator. He's sure to pump you up. 
+              While you might need a translator to understand anything he says, it's worth it to get swole with the worlds 
+              strongest man.</p>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
