@@ -1,0 +1,159 @@
+* {
+  font-family: 'Source Sans Pro';
+}
+#container {
+  background-color: white;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.3em;
+  line-height: 36px;
+}
+.hamburger {
+  display: block;
+  padding-top: 20px;
+  background-color: black;
+  height: 40px;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger .bar {
+  display: block;
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  margin: 6px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+header h1 {
+  text-align: center;
+}
+header h2 {
+  text-align: center;
+}
+.calltoaction {
+  display: block;
+  width: auto;
+  height: 50px;
+  background-image: linear-gradient(to right, black, grey);
+  text-align: center;
+  line-height: 50px;
+  padding: 0 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+}
+.calltoaction a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.calltoaction:visited {
+  color: white;
+}
+.calltoaction:hover {
+  background: black;
+}
+.breadcrums {
+  padding: 0px;
+}
+.breadcrums .breadcrum_li {
+  display: inline-block;
+  font-family: sans-serif;
+}
+.breadcrums:hover {
+  color: darkgray;
+}
+.breadcrum_li:not(:last-of-type)::after {
+  content: ' > ';
+}
+#hamburgerlinks {
+  display: none;
+  text-align: center;
+  visibility: hidden;
+}
+#hamburgerlinks a {
+  display: block;
+  height: 50px;
+  padding: 10px;
+  line-height: 50px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#hamburgerlinks a:hover {
+  opacity: 0.8;
+}
+@media only screen and (min-width: 768px) {
+  #container {
+    background-color: lightgrey;
+    font-size: 1.5em;
+    line-height: 36px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+    background-color: lightgrey;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #container {
+    max-width: 1200px;
+    padding: 0px;
+    background-color: lightgrey;
+    line-height: 46px;
+    font-size: 1.2em;
+  }
+  main {
+    padding: 25px;
+  }
+  .calltoaction {
+    width: 50%;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+  #hamburgerlinks {
+    float: left;
+    display: block;
+    height: 15px;
+    width: 200px;
+    visibility: visible;
+  }
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#return {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  float: right;
+  clear: both;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 1px 1px 5px 1px;
+}
+#return:hover {
+  background-color: white;
+  color: black;
+}

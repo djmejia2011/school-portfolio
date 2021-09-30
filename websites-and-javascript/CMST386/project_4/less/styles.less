@@ -1,0 +1,312 @@
+@primary_color:black;
+@secondary_color:white;
+
+*{
+  font-family: 'Cabin', sans-serif;
+  margin:0px;
+  padding:0px;
+}
+.center-mixin(){
+	margin-right: auto;
+	margin-left: auto;
+}
+.container{
+  max-width: 1210px;
+  .center-mixin();
+}
+
+.product_container{
+    display: flex;
+    .product_image{
+      img{
+        width:100%;
+        height: auto;
+      }
+    }
+    .product_specs{
+      padding: 10px;
+    }
+}
+
+body{
+  background-color: @primary_color;
+
+article{
+  padding:15px;
+}
+}
+
+main{
+    .contact_form{
+    padding:25px;
+
+    }
+
+  background-color: @secondary_color;
+  color:@primary_color;
+  article{
+    //padding:15px;
+    ol{
+      padding-left: 25px;
+    }
+  }
+}
+  .hero_image{
+    background-color: @primary_color;
+    img{
+      position: relative;
+      width: 100%;
+      height: auto;
+      opacity: .5;
+  }
+  .hero_image_text{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: @secondary_color;
+
+    h1{
+      font-size: 4.5em;
+      padding:15px 0px;
+    }
+    button{
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: @primary_color;
+      color: @secondary_color;
+      &:hover{
+        background-color: @secondary_color;
+        color:@primary_color;
+      }
+    }
+  }
+  }
+
+
+
+header{
+  display: block;
+  height:150px;
+  background-color: @primary_color;
+  .logo{
+    float:left;
+  }
+  h1{
+    color:@secondary_color;
+    padding-top:15px;
+    text-align: center;
+    line-height: 100px;
+  }
+  i{
+    float:right;
+    color:@secondary_color;
+    padding-right: 50px;
+  }
+}
+
+.hamburger{
+	background-color:@primary_color;
+	height: 50px;
+  width:50px;
+	&:hover{
+		opacity: 0.7;
+	}
+  i{
+    padding-left: 15px;
+  }
+}
+#hamburgerlinks{
+	display: none;
+	text-align: center;
+	visibility: hidden;
+}
+#hamburgerlinks2{
+  display: none;
+  margin-bottom: 15px;
+  .active{
+    background-color: @secondary_color;
+    color: @primary_color;
+    display: block;
+
+  }
+}
+#hamburgerlinks{
+	a{
+		display: block;
+		height: 50px;
+		padding: 10px;
+		line-height: 50px;
+		color: @secondary_color;
+		background-color: @primary_color;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+}
+.gallery_container{
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  .womenproducts{
+    order:1;
+    flex:1;
+  }
+  .menproducts{
+    order:2;
+    flex:1;
+  }
+  .kidsProducts{
+    order:3;
+    flex:1;
+  }
+}
+
+footer{
+  display:flex;
+  padding:15px;
+  background-color:@primary_color;
+  color:@secondary_color;
+  a{
+    color: @secondary_color;
+  }
+  #timestamp{
+    font-size: .6em;
+  }
+}
+
+  .footer_center{
+    order:2;
+    flex:1;
+    text-align: center;
+    padding:10px;
+  }
+  .footer_left{
+    flex:1;
+    order:1;
+    padding:10px;
+  }
+  .footer_right{
+    flex:1;
+    order:3;
+    padding:10px;
+    padding-right: 25px;
+    text-align: right;
+  }
+
+//Screens smaller than tablets
+@media(max-width:768px){
+  main{
+
+  .hero_image{
+      img{
+        position: relative;
+        width: 100%;
+        height: auto;
+        opacity: .5;
+    }
+    .hero_image_text{
+      position:relative;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: @secondary_color;
+
+      h1{
+        font-size: 1.5em;
+        padding:15px 0px;
+      }
+      button{
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: @primary_color;
+        color: @secondary_color;
+        &:hover{
+          background-color: @secondary_color;
+          color:@primary_color;
+        }
+      }
+    }
+
+    }
+  }
+
+  .gallery_container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    //align-items: baseline;
+    //text-align: center;
+    .womenproducts{
+      order:1;
+      flex:1;
+    }
+    .menproducts{
+      order:2;
+      flex:1;
+    }
+    .kidsProducts{
+      order:3;
+      flex:1;
+    }
+  }
+
+  footer{
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+    background-color:@primary_color;
+    color:@secondary_color;
+    a{
+      color: @secondary_color;
+    }
+    .footer_center{
+      text-align:left;
+      order:3;
+    }
+    .footer_left{
+      text-align:left;
+      order:1;
+    }
+    .footer_right{
+      text-align: left;
+      order:2;
+    }
+  }
+  header{
+    h1{
+      display: none;
+    }
+    i{
+      padding:25px;
+    }
+  }
+}
+//for larger than tablets
+@media(min-width:769px){
+    .hamburger{
+      display:none;
+    }
+    #hamburgerlinks2{
+      display: flex;
+      flex-direction: row;
+      width:25px;
+      visibility:visible;
+
+      a{
+        color: @secondary_color;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:0px 25px;
+        &:hover{
+          transition-duration: .9s;
+          color: @primary_color;
+          background-color: @secondary_color;
+        }
+      }
+    }
+
+  }

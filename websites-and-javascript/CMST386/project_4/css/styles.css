@@ -1,0 +1,267 @@
+* {
+  font-family: 'Cabin', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  max-width: 1210px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product_container {
+  display: flex;
+}
+.product_container .product_image img {
+  width: 100%;
+  height: auto;
+}
+.product_container .product_specs {
+  padding: 10px;
+}
+body {
+  background-color: black;
+}
+body article {
+  padding: 15px;
+}
+main {
+  background-color: white;
+  color: black;
+}
+main .contact_form {
+  padding: 25px;
+}
+main article ol {
+  padding-left: 25px;
+}
+.hero_image {
+  background-color: black;
+}
+.hero_image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.hero_image .hero_image_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero_image .hero_image_text h1 {
+  font-size: 4.5em;
+  padding: 15px 0px;
+}
+.hero_image .hero_image_text button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+}
+.hero_image .hero_image_text button:hover {
+  background-color: white;
+  color: black;
+}
+header {
+  display: block;
+  height: 150px;
+  background-color: black;
+}
+header .logo {
+  float: left;
+}
+header h1 {
+  color: white;
+  padding-top: 15px;
+  text-align: center;
+  line-height: 100px;
+}
+header i {
+  float: right;
+  color: white;
+  padding-right: 50px;
+}
+.hamburger {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger i {
+  padding-left: 15px;
+}
+#hamburgerlinks {
+  display: none;
+  text-align: center;
+  visibility: hidden;
+}
+#hamburgerlinks2 {
+  display: none;
+  margin-bottom: 15px;
+}
+#hamburgerlinks2 .active {
+  background-color: white;
+  color: black;
+  display: block;
+}
+#hamburgerlinks a {
+  display: block;
+  height: 50px;
+  padding: 10px;
+  line-height: 50px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#hamburgerlinks a:hover {
+  opacity: 0.6;
+}
+.gallery_container {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+}
+.gallery_container .womenproducts {
+  order: 1;
+  flex: 1;
+}
+.gallery_container .menproducts {
+  order: 2;
+  flex: 1;
+}
+.gallery_container .kidsProducts {
+  order: 3;
+  flex: 1;
+}
+footer {
+  display: flex;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer #timestamp {
+  font-size: 0.6em;
+}
+.footer_center {
+  order: 2;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+.footer_left {
+  flex: 1;
+  order: 1;
+  padding: 10px;
+}
+.footer_right {
+  flex: 1;
+  order: 3;
+  padding: 10px;
+  padding-right: 25px;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  main .hero_image img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+  }
+  main .hero_image .hero_image_text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  main .hero_image .hero_image_text h1 {
+    font-size: 1.5em;
+    padding: 15px 0px;
+  }
+  main .hero_image .hero_image_text button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+  }
+  main .hero_image .hero_image_text button:hover {
+    background-color: white;
+    color: black;
+  }
+  .gallery_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .gallery_container .womenproducts {
+    order: 1;
+    flex: 1;
+  }
+  .gallery_container .menproducts {
+    order: 2;
+    flex: 1;
+  }
+  .gallery_container .kidsProducts {
+    order: 3;
+    flex: 1;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: black;
+    color: white;
+  }
+  footer a {
+    color: white;
+  }
+  footer .footer_center {
+    text-align: left;
+    order: 3;
+  }
+  footer .footer_left {
+    text-align: left;
+    order: 1;
+  }
+  footer .footer_right {
+    text-align: left;
+    order: 2;
+  }
+  header h1 {
+    display: none;
+  }
+  header i {
+    padding: 25px;
+  }
+}
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+  #hamburgerlinks2 {
+    display: flex;
+    flex-direction: row;
+    width: 25px;
+    visibility: visible;
+  }
+  #hamburgerlinks2 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 25px;
+  }
+  #hamburgerlinks2 a:hover {
+    transition-duration: 0.9s;
+    color: black;
+    background-color: white;
+  }
+}

@@ -1,0 +1,158 @@
+
+#container{
+	background-color: gray;
+	padding:0px;
+	
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	min-width: 700px;
+	
+}
+
+header{
+	background-color: black;
+	margin:0px;
+	padding:15px;
+	text-align:center;
+}
+
+header > h1,h2 {
+	color:white;
+}
+
+main {
+	padding: 0px;
+	margin:0px;
+	margin-top:15px;
+		
+}
+
+main > h3 {
+	margin-top:15px;
+	text-align:center;
+	font-size:1.5em;
+}
+
+ul{
+	text-align:center;
+	padding-left:0px;
+	
+}
+
+ul > li{
+	list-style-type:none;
+	margin:0px;
+	
+}
+
+li > a {
+	text-decoration:none;
+	font-size:1.5em;
+	background-color:#A9A9A9;
+	width: calc(100%/2);
+	height: 50px;
+	display:block;
+	padding-top:15px;
+	float:left;
+}
+
+li > a:hover{
+	background-color:black;
+	color:white;
+}
+
+nav a{
+	background-color:#A9A9A9;
+	display: block;
+	width:100px;
+	height:40px;
+	float:left;
+	padding-top: 15px;
+	text-decoration:none;
+	text-align:center;
+	font-size:1.5em;
+}
+
+nav a:hover{
+	background-color:black;
+	color:white;
+}
+footer {
+	background-color: black;
+	color:white;
+	text-align:center;
+	height:60px;
+	padding-top:20px;
+	clear: both;
+}
+article{
+	padding:15px;
+	background-color:white;
+	margin:5px;
+	clear:both;
+}
+
+article > h2{
+	padding:15px;
+	color:black;
+}
+
+main > h2 {
+	text-align:center;
+}
+
+.image {
+	border: thin solid black;
+	width:200px;
+	height:300px;
+	text-align:center;
+	background-color:white;
+	float:left;
+	margin:15px;
+}
+
+section {
+	clear:both;
+	padding:15px;
+	background-color:grey;
+	margin:5px;
+}
+
+figcaption {
+	font-size:.8em;
+}
+
+.dropmenu {
+	background-color:#A9A9A9;
+	display: block;
+	width:150px;
+	height:40px;
+	float:left;
+}
+
+.dropbutton {
+	position:relative;
+	display:inline-block;
+	width:150px;
+	background-color:#A9A9A9;
+	height:55px;
+	font-size:1.5em;
+	font-family:times new roman;
+	padding:0px;
+	border:none;
+}
+
+.dropbutton:hover{
+	background-color:black;
+	color:white;
+}
+.downcontent{
+	display:none;
+	position:absolute;
+	width:150px;
+}
+
+.dropmenu:hover .downcontent{
+	display:block;
+}

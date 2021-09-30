@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>David Mejia Project 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Project 3 first page">
+	<meta name="keywords" content="preprocessing, project 3, CMST386, UMGC, projects">
+	<meta name="author" content="David Mejia">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/hamburger.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<a id="returntotop"></a>
+		<header>
+		<h1>David Mejia Project 3</h1>
+		<h2>CMST 386</h2>
+		</header>
+
+		<div class="hamburger" onclick="openHamburger()">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+		</div>
+
+		<nav id="hamburgerlinks" >
+			<a href="../index.html" title="Home">Home</a>
+			<a href="../project_3/project3.html" title="Project 3">Project 3</a>
+		</nav>
+
+		<main>
+			<ul class="breadcrums">
+				<li class="breadcrum_li">
+						<a href="../index.html" title="Home">Home</a>
+				</li>
+				<li class="breadcrum_li">
+						<a href="../project_3/project3.html" title="Project 3">Project 3</a>
+				</li>
+				<li class="breadcrum_li">
+<a href="../project_3/preprocessing.html" title="Preprocessing">Learn Preprocessing</a>		</li>
+			</ul>
+		<article>
+			<h2>Preprocessing</h2>
+				<h3>Ways of Implementing Preprocessing(client-side vs server-side):</h3>
+					<p>Preprocessing for LESS can be done at the server-side or at the client-side(in the browser).
+						Preprocessing on the client-side is done by downloading a compiler named less.js and coping into the working directory of the site.
+						Preprocessing at the server-side is done by downloading node package manager and then the lessc compiler.
+						Once we have a LESS file all we have to do is run the command lessc and the compiler will create a CSS file automatically.</p>
+					<h3>Mechanisms Used in LESS:</h3>
+					<ol>
+						<li><strong>Mixins:</strong> are blocks of code that can be reused anywhere in the code and can contain arguments.</li>
+						<li><strong>Variables:</strong> variables like in computer programing are used to store values that can be accessed anywhere in the code. For example,
+							a variable @font-color: black; can be created and used wherever we need the font color to be black.  This is helpful because it simplifies future changes to the style sheet.</li>
+						<li><strong>Functions:</strong> LESS contain a number of built-in mathematical, color,list, strings, and type functions that allows the user to easily manipulate values when needed.</li>
+						<li><strong>Operators:</strong> Arithmetic operators are included in LESS. this allows the user to add, subtract, multiply and divide values.</li>
+						<li><strong>Nested Variables:</strong> LESS allows the user to reflect the relationship between the different elements by allowing the use of nesting elements inside other elements.</li>
+					</ol>
+					<h3>Implementation of LESS Preprocessing:</h3>
+						<p>I implemented LESS using a windows software called less-watch-compiler that automatically compiles my styles.less found in a source folder called less.
+							the less-watch-compiler then keeps watching for any changes that i do in the less file and automatically updates my styles.css file whenever edits are done to the styles.less file.</p>
+							<p>I took advantage of the variables, operator, nested variables and mixins mechanisms found in the LESS code in the following way:</p>
+								<ul>
+									<li><strong>Variables:</strong> I was able to create diferent variables specially for colors.  the use of variables allows me to change the color of the layout in very little time.</li>
+									<li><strong>Nested Variables:</strong> Nested variables was something i used a lot.  Nesting elements felt simple and straight forward. Nested variables were used when styling navigation, unorder list, and hover</li>
+									<li><strong>Mixins:</strong> I used one mixin in this project.  I created a mixin that would allow me to center block elements in the page.</li>
+								</ul>
+
+		 </article>
+		 <div>
+	 	<a href="#returntotop" id="return">Return to the Top</a>
+	 	</div>
+	</main>
+
+
+		<footer>Copyright &#169; 2020 David Mejia CMST386<br/>
+			<address>
+			<a href="mailto:dmejia3@student.umuc.edu">dmejia3@student.umuc.edu</a>
+			</address>
+		</footer>
+	</div>
+</body>
+
+</html>
