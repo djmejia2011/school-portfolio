@@ -1,0 +1,15 @@
+-- This is my test function.
+function test9 returns boolean;
+ 
+begin
+	7 = 0
+	b: real is 3333.3333;
+	if(b > 2000) then
+		9666 - b;
+	endif;
+	
+--this should work as a comment but below should fail
+-- and give 3 lexical errors
+	
+	^ a =^0^;
+end;
