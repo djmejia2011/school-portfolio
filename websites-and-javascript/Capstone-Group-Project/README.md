@@ -1,3 +1,5 @@
 # Repo for project one
 scheduling app for fitness lessons
-#test for push - David Mejia
+### test for push - David Mejia
+"username": "dmejia"
+"password": "dmejia"
